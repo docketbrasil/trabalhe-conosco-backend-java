@@ -15,10 +15,10 @@
   - [Dúvidas](#dúvidas)
 
 ## Principais competências
-- Desenvolver Aplicações Web e RestAPI com linguagem de Programação Java e Framework Spring MVC
+- Desenvolver aplicações Web e API's RESTful com linguagem de Programação Java e o Framework Spring MVC
 - Implementar lógica de negócio nas telas desenvolvidas por desenvolvedores Frontend, utilizando Thymeleaf
-- Ajudar na confecção do modelo de dados para Banco de Dados Postgres quando necessário
-- Fazer análise Técnica junto com o time de desenvolvedores, a partir de requisitos passado pela equipe de produto
+- Ajudar na confecção do modelo de dados para banco de dados Postgres quando necessário
+- Fazer análise técnica junto com o time de desenvolvedores, a partir de requisitos passados pela equipe de produto
 
 ## O Desafio
 
