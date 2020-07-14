@@ -31,9 +31,9 @@ Se ficou com alguma dúvida, nos envie um email ti-ff@docket.com.br
 Uma empresa com a proposta de desburocratizar os serviços cartorários para pessoas físicas e pequenas empresas, e de reduzir o tempo de entrega dos documentos aos seus clientes. 
 
 ## O que fazemos
-- Buscam os documentos em todo o Brasil;
-- Emitem 2ª vias de certidões de nascimento, casamento e óbito;
-- Entregam os documentos aos clientes em até 15 dias.
+- Buscam os documentos em todo o Brasil
+- Emitem 2ª vias de certidões de nascimento, casamento e óbito
+- Entregam os documentos aos clientes em até 15 dias
 
 
 ## Requisitos
@@ -56,8 +56,8 @@ Consumir via backend a lista de certidões de nossa API REST e relacioná-las co
 
 #### Requisitos de Tecnologias
 Usar as Seguintes Tecnologias:
-- Java 8 (ou superior) 
-- Spring MVC 
+- Java 8 (ou superior)
+- Spring MVC
 - Spring Boot
 - Thymeleaf HTML
 - Banco de dados H2DB ou Postgres
