@@ -1,63 +1,64 @@
-# Trabalhe conosco Docket Backend Java
+# Trabalhe conosco Docket Backend Java 
 
 ## Sumário
 
 - [Trabalhe conosco Docket Backend Java](#trabalhe-conosco-docket-backend-java)
   - [Sumário](#sumário)
-  - [Principais competências](#principais-competências)
-  - [O Desafio](#o-desafio)
-    - [Sobre](#sobre)
-    - [Requisitos obrigatórios](#requisitos-obrigatórios)
-      - [Usando as seguintes tecnologias:](#usando-as-seguintes-tecnologias)
-      - [Informações adicionais:](#informações-adicionais)
-    - [Requisitos opcionais (diferencial)](#requisitos-opcionais-diferencial)
-  - [Como participar](#como-participar)
-  - [Dúvidas](#dúvidas)
-
-## Principais competências
-- Desenvolver aplicações Web e API's RESTful com linguagem de Programação Java e o Framework Spring MVC
-- Implementar lógica de negócio nas telas desenvolvidas por desenvolvedores Frontend, utilizando Thymeleaf
-- Ajudar na confecção do modelo de dados para banco de dados Postgres quando necessário
-- Fazer análise técnica junto com o time de desenvolvedores, a partir de requisitos passados pela equipe de produto
-
-## O Desafio
-
-### Sobre
-Construa sistema de cartórios baseado nos requisitos. Cumpra todos os desafios para se destacar.
-
-### Requisitos obrigatórios
+  - [Proposta](#proposta)
+  - [Importante](#importante)
+  - [Briefing](#briefing)
+  - [Requisitos](#requisitos)
+      - [História do Usuário](#história-do-usuário)
+      - [Requisitos Obrigatórios:](#requisitos-obrigatórios)
+      - [Informações Adicionais](#informações-adicionais)
+      - [Requisitos Opcionais (diferenciais)](#requisitos-opcionais-diferenciais)
+      - [Requisitos de Tecnologias](#requisitos-de-tecnologias)
+  - [Planejamento](#planejamento)
 
 
-- O sistema deve armazenar as informações de um cartório, que são nome, endereço e as certidões que ele emite.
-- O sistema deve conseguir listar os cartórios e suas informações.
-- O sistema deve permitir a exclusão e edição dos cartórios.
 
-#### Usando as seguintes tecnologias:
-- Java 8 (ou superior)
-- Spring MVC
+## Proposta
+Neste teste para a área de desenvolvedor Backend, à partir do briefing e requisito apresentados, a Docket propõe a você construir um sistema de cartórios e o planejamento do seu projeto.
+
+## Importante
+Crie um repositório público no github e coloque o código fonte do projeto.
+Envie o link do repositório do github email: ti-ff@docket.com.br
+Se ficou com alguma dúvida, nos envie um email ti-ff@docket.com.br
+
+## Briefing
+Uma empresa com a proposta de desburocratizar os serviços cartorários para pessoas físicas e pequenas empresas, e de reduzir o tempo de entrega dos documentos aos seus clientes. 
+O QUE FAZEMOS
+Buscam os documentos em todo o Brasil;
+Emitem 2ª vias de certidões de nascimento, casamento e óbito;
+Entregam os documentos aos clientes em até 15 dias.
+
+
+## Requisitos
+
+#### História do Usuário
+Como operador do sistema, quando entro em contato com um novo cartório, desejo cadastrá-lo na nossa base com suas informações básicas, pois assim posso consultá-lo e alterá-lo sempre que necessário.
+
+#### Requisitos Obrigatórios:
+Armazenar as informações básicas, que são: nome, endereço e as certidões que ele emite.
+Listar os cartórios e suas informações. 
+Permitir a exclusão e edição dos cartórios.
+
+#### Informações Adicionais
+Um cartório tem apenas um nome e endereço. 
+Um cartório pode emitir uma ou mais certidões. 
+Uma certidão possui apenas um nome.
+
+#### Requisitos Opcionais (diferenciais)
+Consumir via backend a lista de certidões de nossa API REST e relacioná-las com os cartórios. Uma API REST para o sistema de cartórios com todas as funcionalidades do sistema.
+
+#### Requisitos de Tecnologias
+Usar as Seguintes Tecnologias:
+- Java 8 (ou superior) 
+- Spring MVC 
 - Spring Boot
-- Thymeleaf
-- HTML
-- Banco de dados H2DB, Postgres ou Mysql
+- Thymeleaf HTML
+- Banco de dados H2DB ou Postgres
 
-#### Informações adicionais:
-- Um cartório tem apenas um nome e endereço.
-- Um cartório pode emitir uma ou mais certidões.
-- Uma certidão possúi apenas um nome
-
-
-### Requisitos opcionais (diferencial)
-- Consumir via backend a lista de certidões de nossa API REST e relaciona-las com os cartórios.
-- Uma API REST para o sistema de cartórios com todas as funcionalidades do sistema
-
-
-
-## Como participar
-- Crie um repositório público no github e coloque o código fonte do projeto
-- Envie o link do repositório do github email: ti-ff@docket.com.br
-
-
-## Dúvidas
-- Se ficou com alguma dúvida, nos envie um email ti-ff@docket.com.br
-
+## Planejamento
+Nos conte como irá se planejar para executar o projeto, como por exemplo: como transformou os requisitos em tarefas, se utilizou alguma ferramenta para se organizar, se desenhou algum diagrama e etc.
 
