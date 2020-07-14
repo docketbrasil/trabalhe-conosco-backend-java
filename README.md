@@ -29,10 +29,11 @@ Se ficou com alguma dúvida, nos envie um email ti-ff@docket.com.br
 
 ## Briefing
 Uma empresa com a proposta de desburocratizar os serviços cartorários para pessoas físicas e pequenas empresas, e de reduzir o tempo de entrega dos documentos aos seus clientes. 
-O QUE FAZEMOS
-Buscam os documentos em todo o Brasil;
-Emitem 2ª vias de certidões de nascimento, casamento e óbito;
-Entregam os documentos aos clientes em até 15 dias.
+
+## O que fazemos
+- Buscam os documentos em todo o Brasil;
+- Emitem 2ª vias de certidões de nascimento, casamento e óbito;
+- Entregam os documentos aos clientes em até 15 dias.
 
 
 ## Requisitos
