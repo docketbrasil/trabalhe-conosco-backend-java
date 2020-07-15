@@ -33,19 +33,18 @@ Uma empresa com a proposta de desburocratizar os serviços cartorários para pes
 Como operador do sistema, quando entro em contato com um novo cartório, desejo cadastrá-lo na nossa base com suas informações básicas, pois assim posso consultá-lo e alterá-lo sempre que necessário.
 
 #### Requisitos Obrigatórios:
-Armazenar as informações básicas, que são: nome, endereço e as certidões que ele emite.
-Listar os cartórios e suas informações. 
-Permitir a exclusão e edição dos cartórios.
+ - Armazenar as informações básicas, que são: nome, endereço e as certidões que ele emite.
+ - Listar os cartórios e suas informações. 
+ - Permitir a exclusão e edição dos cartórios.
 
 #### Informações Adicionais
-Um cartório tem apenas um nome e endereço. 
-Um cartório pode emitir uma ou mais certidões. 
-Uma certidão possui apenas um nome.
+ - Um cartório tem apenas um nome e endereço. 
+ - Um cartório pode emitir uma ou mais certidões. 
+ - Uma certidão possui apenas um nome.
 
 #### Requisitos Opcionais (diferenciais)
-Consumir via backend a lista de certidões de nossa API REST https://docketdesafiobackend.herokuapp.com/api/v1/certidoes e relacioná-las com os cartórios. 
-
-Uma API REST para o sistema de cartórios com todas as funcionalidades do sistema.
+- Consumir via backend a lista de certidões de nossa API REST https://docketdesafiobackend.herokuapp.com/api/v1/certidoes e relacioná-las com os cartórios. 
+- Uma API REST para o sistema de cartórios com todas as funcionalidades do sistema.
 
 #### Requisitos de Tecnologias
 Usar as Seguintes Tecnologias:
