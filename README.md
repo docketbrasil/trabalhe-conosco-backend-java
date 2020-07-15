@@ -43,7 +43,8 @@ Um cartório pode emitir uma ou mais certidões.
 Uma certidão possui apenas um nome.
 
 #### Requisitos Opcionais (diferenciais)
-Consumir via backend a lista de certidões de nossa API REST https://docketdesafiobackend.herokuapp.com/api/v1/certidoes e relacioná-las com os cartórios. Uma API REST para o sistema de cartórios com todas as funcionalidades do sistema.
+- Consumir via backend a lista de certidões de nossa API REST https://docketdesafiobackend.herokuapp.com/api/v1/certidoes e relacioná-las com os cartórios. 
+- Uma API REST para o sistema de cartórios com todas as funcionalidades do sistema.
 
 #### Requisitos de Tecnologias
 Usar as Seguintes Tecnologias:
