@@ -20,13 +20,6 @@
 ## Proposta
 Neste teste para a área de desenvolvedor Backend, à partir do briefing e requisito apresentados, a Docket propõe a você construir um sistema de cartórios e o planejamento do seu projeto.
 
-## Importante
-Crie um repositório público no github e coloque o código fonte do projeto.
-
-Para enviar o teste, envie o link do repositório do github e a descrição do planejamento para o email: ti-ff@docket.com.br
-
-Se ficou com alguma dúvida, nos envie um email ti-ff@docket.com.br
-
 ## Briefing
 Uma empresa com a proposta de desburocratizar os serviços cartorários para pessoas físicas e pequenas empresas, e de reduzir o tempo de entrega dos documentos aos seus clientes. 
 
@@ -34,7 +27,6 @@ Uma empresa com a proposta de desburocratizar os serviços cartorários para pes
 - Buscam os documentos em todo o Brasil
 - Emitem 2ª vias de certidões de nascimento, casamento e óbito
 - Entregam os documentos aos clientes em até 15 dias
-
 
 ## Requisitos
 
@@ -64,4 +56,15 @@ Usar as Seguintes Tecnologias:
 
 ## Planejamento
 Nos conte como irá se planejar para executar o projeto, como por exemplo: como transformou os requisitos em tarefas, se utilizou alguma ferramenta para se organizar, se desenhou algum diagrama e etc.
+
+
+# Como participar
+- Crie um repositório público no github e coloque o código fonte do projeto.
+ - Envie uma mensagem de email para o endereço ti-ff@docket.com.br, com o seguinte conteúdo:
+    - Link do repositório do github com o código fonte do projeto
+    - Descrição do planejamento
+    - Currículo em anexo ou link do perfil no linkedin.com
+
+Se ficou com alguma dúvida, nos envie um email ti-ff@docket.com.br
+
 
