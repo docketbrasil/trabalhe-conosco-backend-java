@@ -13,7 +13,7 @@
       - [Informações Adicionais](#informações-adicionais)
       - [Requisitos Opcionais (diferenciais)](#requisitos-opcionais-diferenciais)
       - [Requisitos de Tecnologias](#requisitos-de-tecnologias)
-  - [Planejamento](#planejamento)
+- [Como participar](#como-participar)
 
 
 
