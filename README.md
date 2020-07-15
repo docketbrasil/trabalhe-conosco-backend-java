@@ -3,7 +3,6 @@
 ## Sumário
 
 - [Trabalhe conosco Docket Backend Java](#trabalhe-conosco-docket-backend-java)
-  - [Sumário](#sumário)
   - [Proposta](#proposta)
   - [Importante](#importante)
   - [Briefing](#briefing)
