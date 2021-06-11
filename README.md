@@ -44,7 +44,7 @@ Utilizando **Thymeleaf** ou **JSP (com JSTL)** no front-end (preferencialmente *
 ####Consumo de API Rest:
 - Consumir via backend a lista de certidões de nossa API REST https://docketdesafiobackend.herokuapp.com/api/v1/certidoes e relacioná-las com os cartórios.
 
-####Disponibilizar uma client API Rest (segundo boas práticas da Arquitetura Rest) que deve:
+####Disponibilizar um client API Rest (seguindo as boas práticas da Arquitetura Rest) que deve:
 - Permitir o cadastro das informações básicas dos cartórios, que são: nome, endereço e as certidões que ele emite.
 - Listar os cartórios e suas informações.
 - Permitir a exclusão e edição dos cartórios.
@@ -66,11 +66,11 @@ Nos conte como irá se planejar para executar o projeto, como por exemplo: como 
 
 # Como participar
 - Crie um repositório público no github e coloque o código fonte do projeto.
- - Envie uma mensagem de email para o endereço wanessa.rodrigues@docket.com.br, com o seguinte conteúdo:
+ - Envie uma mensagem de email para o endereço brenda.araujo@docket.com.br, com o seguinte conteúdo:
     - Link do repositório do github com o código fonte do projeto
     - Descrição do planejamento
     - Currículo em anexo ou link do perfil no linkedin.com
 
-Se ficou com alguma dúvida, nos envie um email wanessa.rodrigues@docket.com.br
+Se ficou com alguma dúvida, envie um email para brenda.araujo@docket.com.br
 
 
