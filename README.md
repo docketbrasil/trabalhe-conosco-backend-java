@@ -1,4 +1,4 @@
-# Trabalhe conosco Docket Backend Java 
+# Trabalhe conosco Docket Backend Java :coffee
 
 ## Sumário
 
@@ -29,34 +29,40 @@ Uma empresa com a proposta de desburocratizar os serviços cartorários para pes
 
 ## Requisitos
 
-#### História do Usuário
+### História do Usuário
 Como operador do sistema, quando entro em contato com um novo cartório, desejo cadastrá-lo na nossa base com suas informações básicas, pois assim posso consultá-lo e alterá-lo sempre que necessário.
 
-#### Requisitos Obrigatórios:
- - Permitir o cadastro e edição das informações básicas, que são: nome, endereço e as certidões que ele emite.
+### Requisitos Obrigatórios:
+Utilizando **Thymeleaf** ou **JSP (com JSTL)** no front-end (preferencialmente **Thymeleaf**), o sistema deve:
+
+ - Permitir o cadastro das informações básicas dos cartórios, que são: nome, endereço e as certidões que ele emite.
  - Listar os cartórios e suas informações. 
  - Permitir a exclusão e edição dos cartórios.
 
-#### Informações Adicionais
+### Requisitos Opcionais (diferenciais)
+
+####Consumo de API Rest:
+- Consumir via backend a lista de certidões de nossa API REST https://docketdesafiobackend.herokuapp.com/api/v1/certidoes e relacioná-las com os cartórios.
+
+####Disponibilizar uma client API Rest (segundo boas práticas da Arquitetura Rest) que deve:
+- Permitir o cadastro das informações básicas dos cartórios, que são: nome, endereço e as certidões que ele emite.
+- Listar os cartórios e suas informações.
+- Permitir a exclusão e edição dos cartórios.
+
+### Informações Adicionais
  - Um cartório tem apenas um nome e endereço. 
  - Um cartório pode emitir uma ou mais certidões. 
  - Uma certidão possui apenas um nome.
 
-#### Requisitos Opcionais (diferenciais)
-- Consumir via backend a lista de certidões de nossa API REST https://docketdesafiobackend.herokuapp.com/api/v1/certidoes e relacioná-las com os cartórios. 
-- Uma API REST para o sistema de cartórios com todas as funcionalidades do sistema.
-
-#### Requisitos de Tecnologias
+### Requisitos de Tecnologias
 Usar as Seguintes Tecnologias:
 - Java 8 (ou superior)
-- Spring MVC
-- Spring Boot
+- Spring Boot ou Spring MVC 
 - Thymeleaf HTML
 - Banco de dados H2DB ou Postgres
 
 ## Planejamento
 Nos conte como irá se planejar para executar o projeto, como por exemplo: como transformou os requisitos em tarefas, se utilizou alguma ferramenta para se organizar, se desenhou algum diagrama e etc.
-
 
 # Como participar
 - Crie um repositório público no github e coloque o código fonte do projeto.
