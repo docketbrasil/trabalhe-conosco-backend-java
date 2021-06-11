@@ -33,7 +33,7 @@ Uma empresa com a proposta de desburocratizar os serviços cartorários para pes
 Como operador do sistema, quando entro em contato com um novo cartório, desejo cadastrá-lo na nossa base com suas informações básicas, pois assim posso consultá-lo e alterá-lo sempre que necessário.
 
 #### Requisitos Obrigatórios:
- - Armazenar as informações básicas, que são: nome, endereço e as certidões que ele emite.
+ - Permitir o cadastro e edição das informações básicas, que são: nome, endereço e as certidões que ele emite.
  - Listar os cartórios e suas informações. 
  - Permitir a exclusão e edição dos cartórios.
 
