@@ -71,6 +71,6 @@ Nos conte como irá se planejar para executar o projeto, como por exemplo: como 
     - Descrição do planejamento
     - Currículo em anexo ou link do perfil no linkedin.com
 
-Se ficou com alguma dúvida, envie um email para brenda.araujo@docket.com.br
+Se ficou com alguma dúvida, nos envie um email: brenda.araujo@docket.com.br
 
 
