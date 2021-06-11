@@ -1,4 +1,4 @@
-# Trabalhe conosco Docket Backend Java :coffee
+# Trabalhe conosco Docket Backend Java
 
 ## Sumário
 
