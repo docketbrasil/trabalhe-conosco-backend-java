@@ -41,10 +41,10 @@ Utilizando **Thymeleaf** ou **JSP (com JSTL)** no front-end (preferencialmente *
 
 ### Requisitos Opcionais (diferenciais)
 
-####Consumo de API Rest:
+#### Consumo de API Rest:
 - Consumir via backend a lista de certidões de nossa API REST https://docketdesafiobackend.herokuapp.com/api/v1/certidoes e relacioná-las com os cartórios.
 
-####Disponibilizar um client API Rest (seguindo as boas práticas da Arquitetura Rest) que deve:
+#### Disponibilizar um client API Rest (seguindo as boas práticas da Arquitetura Rest) que deve:
 - Permitir o cadastro das informações básicas dos cartórios, que são: nome, endereço e as certidões que ele emite.
 - Listar os cartórios e suas informações.
 - Permitir a exclusão e edição dos cartórios.
