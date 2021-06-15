@@ -58,7 +58,7 @@ Utilizando **Thymeleaf** ou **JSP (com JSTL)** no front-end (preferencialmente *
 Usar as Seguintes Tecnologias:
 - Java 8 (ou superior)
 - Spring Boot ou Spring MVC 
-- Thymeleaf HTML
+- Thymeleaf HTML ou JSP (com JSTL)
 - Banco de dados H2DB ou Postgres
 
 ## Planejamento
