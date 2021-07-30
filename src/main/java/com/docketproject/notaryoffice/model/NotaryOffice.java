@@ -9,7 +9,9 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
@@ -21,13 +23,23 @@ public class NotaryOffice implements Serializable {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String name;
-	private Adress adress;
+
+	@OneToOne(cascade = CascadeType.ALL)
+	@JoinColumn(name = "address_id", referencedColumnName = "id")
+	private Address address;
 
 	@JsonIgnore
 	@OneToMany(mappedBy = "notaryOffice", cascade = CascadeType.ALL)
 	private List<Certificate> certificates = new ArrayList<>();
 
 	public NotaryOffice() {
+	}
+
+	public NotaryOffice(Long id, String name, Address address, List<Certificate> certificates) {
+		this.id = id;
+		this.name = name;
+		this.address = address;
+		this.certificates = certificates;
 	}
 
 	public Long getId() {
@@ -46,12 +58,12 @@ public class NotaryOffice implements Serializable {
 		this.name = name;
 	}
 
-	public Adress getAdress() {
-		return adress;
+	public Address getAddress() {
+		return address;
 	}
 
-	public void setAdress(Adress adress) {
-		this.adress = adress;
+	public void setAddress(Address address) {
+		this.address = address;
 	}
 
 	public List<Certificate> getCertificates() {

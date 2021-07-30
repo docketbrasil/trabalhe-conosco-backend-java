@@ -17,12 +17,17 @@ public class Certificate implements Serializable {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String name;
-	
+
 	@ManyToOne
 	@JoinColumn(name = "notaryoffice_id")
 	private NotaryOffice notaryOffice;
 
+	public Certificate() {
+	}
+
 	public Certificate(Long id, String name) {
+		this.id = id;
+		this.name = name;
 	}
 
 	public Long getId() {
