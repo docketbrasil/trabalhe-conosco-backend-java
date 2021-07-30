@@ -6,6 +6,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 
 @Entity
 public class Certificate implements Serializable {
@@ -15,6 +17,10 @@ public class Certificate implements Serializable {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String name;
+	
+	@ManyToOne
+	@JoinColumn(name = "notaryoffice_id")
+	private NotaryOffice notaryOffice;
 
 	public Certificate(Long id, String name) {
 	}
@@ -33,5 +39,13 @@ public class Certificate implements Serializable {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public NotaryOffice getNotaryOffice() {
+		return notaryOffice;
+	}
+
+	public void setNotaryOffice(NotaryOffice notaryOffice) {
+		this.notaryOffice = notaryOffice;
 	}
 }
