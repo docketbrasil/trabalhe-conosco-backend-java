@@ -6,9 +6,10 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
 
 @Entity
-public class Adress implements Serializable {
+public class Address implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
@@ -20,7 +21,19 @@ public class Adress implements Serializable {
 	private String city;
 	private String country;
 
-	public Adress() {
+	@OneToOne(mappedBy = "address")
+	private NotaryOffice notaryOffice;
+
+	public Address() {
+	}
+
+	public Address(Long id, String email, String phoneNumber, String street, String city, String country) {
+		this.id = id;
+		this.email = email;
+		this.phoneNumber = phoneNumber;
+		this.street = street;
+		this.city = city;
+		this.country = country;
 	}
 
 	public Long getId() {
@@ -69,5 +82,13 @@ public class Adress implements Serializable {
 
 	public void setCountry(String country) {
 		this.country = country;
+	}
+
+	public NotaryOffice getNotaryOffice() {
+		return notaryOffice;
+	}
+
+	public void setNotaryOffice(NotaryOffice notaryOffice) {
+		this.notaryOffice = notaryOffice;
 	}
 }
