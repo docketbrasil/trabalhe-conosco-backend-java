@@ -1,5 +1,6 @@
 package com.docketproject.notaryoffice.service;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -9,6 +10,8 @@ import org.hibernate.ObjectNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.docketproject.notaryoffice.dto.NotaryOfficeDTO;
+import com.docketproject.notaryoffice.model.Address;
 import com.docketproject.notaryoffice.model.NotaryOffice;
 import com.docketproject.notaryoffice.repository.NotaryOfficeRepository;
 
@@ -27,8 +30,9 @@ public class NotaryOfficeService {
 	}
 
 	@Transactional
-	public NotaryOffice insert(NotaryOffice notaryOffice) {
-		return repository.save(notaryOffice);
+	public NotaryOffice insert(NotaryOfficeDTO objDto) {
+		NotaryOffice obj = fromDTO(objDto);
+		return repository.save(obj);
 	}
 
 	public NotaryOffice update(NotaryOffice obj) {
@@ -43,5 +47,19 @@ public class NotaryOfficeService {
 	public List<NotaryOffice> findAll() {
 		List<NotaryOffice> list = repository.findAll();
 		return list;
+	}
+
+	private NotaryOffice fromDTO(NotaryOfficeDTO objDto) {
+		NotaryOffice notaryOffice = new NotaryOffice(null, objDto.getName(), fillAddress(objDto), new ArrayList<>());
+		return notaryOffice;
+	}
+
+	private Address fillAddress(NotaryOfficeDTO objDto) {
+		Address address = new Address();
+		address.setEmail(objDto.getEmail());
+		address.setPhoneNumber(objDto.getPhone());
+		address.setStreet(objDto.getStreet());
+		address.setCity(objDto.getCity());
+		return address;
 	}
 }
