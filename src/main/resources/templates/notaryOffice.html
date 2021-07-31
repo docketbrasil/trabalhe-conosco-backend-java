@@ -1,11 +1,47 @@
 <html>
-	<head>
-		<meta charset="UTF-8"/>
-	</head>
-	<body>
-		<h1>Notary Office</h1>
-		<div>Name: </div>
-		<div>Certificates: </div>	
-		<div>Adress: </div>
-	</body>
+
+<head th:fragment="head">
+	<meta charset="UTF-8" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<h1>Escritório</h1>
+	<form action="/notaryoffice/create" method="POST" class="card-body">
+		<div class="mb-3">
+			<label for="name">Nome </label>
+			<input name="name" />
+		</div>
+		<div class="mb-3">
+			<label for="email">E-mail </label>
+			<input name="email" />
+		</div>
+		<div class="mb-3">
+			<label for="phone">Telefone </label>
+			<input name="phone" />
+		</div>
+		<div class="mb-3">
+			<label for="street">Rua </label>
+			<input name="street" />
+		</div>
+		<div class="mb-3">
+			<label for="city">Cidade </label>
+			<input name="city" />
+		</div>
+		<div class="mb-3">
+			<label for="country">Pais </label>
+			<input name="country" />
+		</div>
+		<div class="mb-3">
+			<label>Certificados </label>
+			<select name="certificates" id="certificates">
+				<option>2° Via de Certidão de Casamento</option>
+			</select>
+		</div>
+		<button type="submit">Cadastrar</button>
+	</form>
+</body>
+
 </html>
