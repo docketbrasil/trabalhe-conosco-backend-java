@@ -32,7 +32,7 @@ public class DBService {
 				"New York", "USA");
 
 		NotaryOffice nf1 = new NotaryOffice(null, "The Professional Notary.", ad1, Arrays.asList(cft1));
-		
+
 		ad1.setNotaryOffice(nf1);
 		cft1.setNotaryOffice(nf1);
 
