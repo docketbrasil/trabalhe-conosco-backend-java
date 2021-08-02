@@ -1,6 +1,6 @@
 package com.docketproject.notaryoffice.service;
 
-import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
@@ -12,6 +12,7 @@ import org.springframework.stereotype.Service;
 
 import com.docketproject.notaryoffice.dto.NotaryOfficeDTO;
 import com.docketproject.notaryoffice.model.Address;
+import com.docketproject.notaryoffice.model.Certificate;
 import com.docketproject.notaryoffice.model.NotaryOffice;
 import com.docketproject.notaryoffice.repository.NotaryOfficeRepository;
 
@@ -50,8 +51,8 @@ public class NotaryOfficeService {
 	}
 
 	private NotaryOffice fromDTO(NotaryOfficeDTO objDto) {
-		NotaryOffice notaryOffice = new NotaryOffice(null, objDto.getName(), fillAddress(objDto), new ArrayList<>());
-		return notaryOffice;
+		return new NotaryOffice(null, objDto.getName(), fillAddress(objDto),
+				Arrays.asList(new Certificate(null, objDto.getCertificateName())));
 	}
 
 	private Address fillAddress(NotaryOfficeDTO objDto) {
