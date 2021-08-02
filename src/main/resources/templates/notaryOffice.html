@@ -9,35 +9,36 @@
 
 <body>
 	<h1>Escritório</h1>
-	<form action="/notaryoffice/create" method="POST" class="card-body">
+	<form th:action="@{/notaryOffice/create}" th:object="${notaryOfficeDTO}" method="POST" class="card-body">
 		<div class="mb-3">
 			<label for="name">Nome </label>
-			<input name="name" />
+			<input name="name" th:field="*{name}" />
 		</div>
 		<div class="mb-3">
 			<label for="email">E-mail </label>
-			<input name="email" />
+			<input name="email" th:field="*{email}" />
 		</div>
 		<div class="mb-3">
 			<label for="phone">Telefone </label>
-			<input name="phone" />
+			<input name="phone" th:field="*{phone}" />
 		</div>
 		<div class="mb-3">
 			<label for="street">Rua </label>
-			<input name="street" />
+			<input name="street" th:field="*{street}" />
 		</div>
 		<div class="mb-3">
 			<label for="city">Cidade </label>
-			<input name="city" />
+			<input name="city" th:field="*{city}" />
 		</div>
 		<div class="mb-3">
 			<label for="country">Pais </label>
-			<input name="country" />
+			<input name="country" th:field="*{country}" />
 		</div>
 		<div class="mb-3">
 			<label>Certificados </label>
-			<select name="certificates" id="certificates">
-				<option>2° Via de Certidão de Casamento</option>
+			<select name="certificates" th:field="*{certificateName}">
+				<option th:each="certificate: ${certificates}" th:value="${certificate.nome}"
+					th:text="${certificate.nome}" selected />
 			</select>
 		</div>
 		<button type="submit">Cadastrar</button>
