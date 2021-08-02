@@ -8,6 +8,7 @@ public class NotaryOfficeDTO {
 	private String street;
 	private String city;
 	private String country;
+	private String certificateName;
 
 	public String getName() {
 		return name;
@@ -55,5 +56,13 @@ public class NotaryOfficeDTO {
 
 	public void setCountry(String country) {
 		this.country = country;
+	}
+
+	public String getCertificateName() {
+		return certificateName;
+	}
+
+	public void setCertificateName(String certificateName) {
+		this.certificateName = certificateName;
 	}
 }
