@@ -9,7 +9,7 @@
 
 <body>
 	<h1>Escritório</h1>
-	<form th:action="@{/notaryOffice/create}" th:object="${notaryOfficeDTO}" method="POST" class="card-body">
+	<form th:action="@{/notaryOffice/create}" th:object="${notaryOfficeTemplateDTO}" method="POST" class="card-body">
 		<div class="mb-3">
 			<label for="name">Nome </label>
 			<input name="name" th:field="*{name}" />
@@ -37,7 +37,7 @@
 		<div class="mb-3">
 			<label>Certificados </label>
 			<select name="certificates" th:field="*{certificateName}">
-				<option th:each="certificate: ${certificates}" th:value="${certificate.nome}"
+				<option th:each="certificate: ${certificates}" th:value="${certificate}"
 					th:text="${certificate.nome}" selected />
 			</select>
 		</div>
