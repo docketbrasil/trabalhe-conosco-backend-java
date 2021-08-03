@@ -13,8 +13,6 @@ import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-
 @Entity
 public class NotaryOffice implements Serializable {
 	private static final long serialVersionUID = 1L;
@@ -28,9 +26,8 @@ public class NotaryOffice implements Serializable {
 	@JoinColumn(name = "address_id", referencedColumnName = "id")
 	private Address address;
 
-	@JsonIgnore
 	@OneToMany(mappedBy = "notaryOffice", cascade = CascadeType.ALL)
-	private List<Certificate> certificates = new ArrayList<>();
+	private List<Certificate> certificates;
 
 	public NotaryOffice() {
 	}
@@ -39,7 +36,7 @@ public class NotaryOffice implements Serializable {
 		this.id = id;
 		this.name = name;
 		this.address = address;
-		this.certificates = certificates;
+		certificates.forEach(x -> addCertificate(x));
 	}
 
 	public Long getId() {
@@ -70,8 +67,12 @@ public class NotaryOffice implements Serializable {
 		return certificates;
 	}
 
-	public void setCertificates(List<Certificate> certificates) {
-		this.certificates = certificates;
+	public void addCertificate(Certificate certificate) {
+		if (certificate != null)
+			if (certificates == null)
+				certificates = new ArrayList<Certificate>();
+		
+		this.certificates.add(certificate);
+		certificate.setNotaryOffice(this);
 	}
-
 }
