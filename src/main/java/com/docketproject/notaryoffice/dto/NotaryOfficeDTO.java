@@ -1,14 +1,29 @@
 package com.docketproject.notaryoffice.dto;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import com.docketproject.notaryoffice.model.Certificate;
+
 public class NotaryOfficeDTO {
 
+	private Long id;
 	private String name;
 	private String email;
 	private String phone;
 	private String street;
 	private String city;
 	private String country;
-	private String certificateName;
+
+	private List<Certificate> certificates = new ArrayList<>();
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
 
 	public String getName() {
 		return name;
@@ -58,11 +73,11 @@ public class NotaryOfficeDTO {
 		this.country = country;
 	}
 
-	public String getCertificateName() {
-		return certificateName;
+	public List<Certificate> getCertificates() {
+		return certificates;
 	}
 
-	public void setCertificateName(String certificateName) {
-		this.certificateName = certificateName;
+	public void setCertificates(List<Certificate> certificates) {
+		this.certificates = certificates;
 	}
 }
