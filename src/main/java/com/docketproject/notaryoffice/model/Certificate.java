@@ -6,8 +6,9 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
 public class Certificate implements Serializable {
@@ -19,7 +20,7 @@ public class Certificate implements Serializable {
 	private String name;
 
 	@ManyToOne
-	@JoinColumn(name = "notaryoffice_id")
+	@JsonIgnore
 	private NotaryOffice notaryOffice;
 
 	public Certificate() {
