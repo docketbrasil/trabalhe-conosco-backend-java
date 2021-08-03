@@ -8,6 +8,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToOne;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 @Entity
 public class Address implements Serializable {
 	private static final long serialVersionUID = 1L;
@@ -21,6 +23,7 @@ public class Address implements Serializable {
 	private String city;
 	private String country;
 
+	@JsonIgnore
 	@OneToOne(mappedBy = "address")
 	private NotaryOffice notaryOffice;
 
