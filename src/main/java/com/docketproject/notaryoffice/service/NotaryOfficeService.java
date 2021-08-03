@@ -1,18 +1,16 @@
 package com.docketproject.notaryoffice.service;
 
-import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
 import javax.transaction.Transactional;
 
-import org.hibernate.ObjectNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.docketproject.notaryoffice.dto.NotaryOfficeDTO;
+import com.docketproject.notaryoffice.exception.ObjectNotFoundException;
 import com.docketproject.notaryoffice.model.Address;
-import com.docketproject.notaryoffice.model.Certificate;
 import com.docketproject.notaryoffice.model.NotaryOffice;
 import com.docketproject.notaryoffice.repository.NotaryOfficeRepository;
 
@@ -36,7 +34,8 @@ public class NotaryOfficeService {
 		return repository.save(obj);
 	}
 
-	public NotaryOffice update(NotaryOffice obj) {
+	public NotaryOffice update(NotaryOfficeDTO objDto) {
+		NotaryOffice obj = fromDTO(objDto);
 		return repository.save(obj);
 	}
 
@@ -51,8 +50,7 @@ public class NotaryOfficeService {
 	}
 
 	private NotaryOffice fromDTO(NotaryOfficeDTO objDto) {
-		return new NotaryOffice(null, objDto.getName(), fillAddress(objDto),
-				Arrays.asList(new Certificate(null, objDto.getCertificateName())));
+		return new NotaryOffice(objDto.getId(), objDto.getName(), fillAddress(objDto), objDto.getCertificates());
 	}
 
 	private Address fillAddress(NotaryOfficeDTO objDto) {
@@ -61,6 +59,7 @@ public class NotaryOfficeService {
 		address.setPhoneNumber(objDto.getPhone());
 		address.setStreet(objDto.getStreet());
 		address.setCity(objDto.getCity());
+		address.setCountry(objDto.getCountry());
 		return address;
 	}
 }
