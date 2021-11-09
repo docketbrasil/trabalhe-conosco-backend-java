@@ -66,11 +66,11 @@ Nos conte como irá se planejar para executar o projeto, como por exemplo: como 
 
 # Como participar
 - Crie um repositório público no github e coloque o código fonte do projeto.
- - Envie uma mensagem de email para o endereço brenda.araujo@docket.com.br, com o seguinte conteúdo:
+ - Envie por email o seguinte conteúdo:
     - Link do repositório do github com o código fonte do projeto
     - Descrição do planejamento
     - Currículo em anexo ou link do perfil no linkedin.com
 
-Se ficou com alguma dúvida, nos envie um email: brenda.araujo@docket.com.br
+Se ficou com alguma dúvida estamos à disposição.
 
 
